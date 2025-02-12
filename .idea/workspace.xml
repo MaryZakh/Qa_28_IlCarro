@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af6e3a4d-4932-436e-a276-f136f69538c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
     </list>
@@ -19,6 +19,26 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Qa_28_IlCarro" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,17 +76,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.LoginTests.executor": "Run",
+    "Gradle.LoginTests.loginEmptyEmail.executor": "Run",
+    "Gradle.LoginTests.loginEmptyPassword.executor": "Run",
     "Gradle.LoginTests.loginSuccess.executor": "Run",
     "Gradle.LoginTests.loginSuccess1.executor": "Run",
     "Gradle.LoginTests.loginSuccessModel.executor": "Run",
+    "Gradle.LoginTests.loginUnregisteredUser.executor": "Run",
+    "Gradle.LoginTests.loginWrongEmail.executor": "Run",
+    "Gradle.LoginTests.loginWrongPassword.executor": "Run",
     "Gradle.LoginTests.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Qa28/Qa28_PhoneBook"
+    "last_opened_file_path": "D:/Qa28/Qa_28_IlCarro"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.LoginTests.loginSuccess1">
+  <component name="RunManager" selected="Gradle.LoginTests">
     <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -91,7 +116,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.loginSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTests.loginEmptyEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -104,7 +129,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LoginTests.loginSuccess&quot;" />
+            <option value="&quot;tests.LoginTests.loginEmptyEmail&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -115,7 +140,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.loginSuccess1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTests.loginEmptyPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -128,7 +153,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LoginTests.loginSuccess1&quot;" />
+            <option value="&quot;tests.LoginTests.loginEmptyPassword&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -139,7 +164,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.loginSuccessModel" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTests.loginUnregisteredUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -152,7 +177,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LoginTests.loginSuccessModel&quot;" />
+            <option value="&quot;tests.LoginTests.loginUnregisteredUser&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -163,7 +188,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTests.loginWrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -176,7 +201,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LoginTests.test&quot;" />
+            <option value="&quot;tests.LoginTests.loginWrongPassword&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LoginTests.loginSuccess1" />
-        <item itemvalue="Gradle.LoginTests.loginSuccessModel" />
         <item itemvalue="Gradle.LoginTests" />
-        <item itemvalue="Gradle.LoginTests.loginSuccess" />
-        <item itemvalue="Gradle.LoginTests.test" />
+        <item itemvalue="Gradle.LoginTests.loginEmptyPassword" />
+        <item itemvalue="Gradle.LoginTests.loginEmptyEmail" />
+        <item itemvalue="Gradle.LoginTests.loginUnregisteredUser" />
+        <item itemvalue="Gradle.LoginTests.loginWrongPassword" />
       </list>
     </recent_temporary>
   </component>

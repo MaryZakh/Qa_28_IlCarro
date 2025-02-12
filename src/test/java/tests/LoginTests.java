@@ -41,24 +41,65 @@ public class LoginTests extends TestBase {
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("margo@gmail.com", "Mmar123456$");
         app.getHelperUser().submitLogin();
+       // app.getHelperUser().pause(5000);
         Assert.assertEquals(app.getHelperUser().getMessage(),"Logged in success");
+    }
+
+
+    @Test
+    public void loginWrongEmail(){
+        User user = new User().setEmail("margagmail.com").setPassword("Mmar123456$");
+        app.getHelperUser().openLoginForm();
+        app.getHelperUser().fillLoginForm(user);
+        app.getHelperUser().submitLogin();
+        Assert.assertEquals(app.getHelperUser().getErrorText(), "It'snot look like email");
+        Assert.assertTrue(app.getHelperUser().isYallaButtonNotActive());
+    }
+
+    @Test
+    public void loginWrongPassword(){
+        User user = new User().setEmail("marga@gmail.com").setPassword("Mmar123");
+        app.getHelperUser().openLoginForm();
+        app.getHelperUser().fillLoginForm(user);
+        app.getHelperUser().submitLogin();
+        Assert.assertEquals(app.getHelperUser().getMessage(),"\"Login or Password incorrect\"");
+    }
+
+    @Test
+    public void loginUnregisteredUser(){
+        User user = new User().setEmail("maaa@gmail.com").setPassword("Maa123456$");
+        app.getHelperUser().openLoginForm();
+        app.getHelperUser().fillLoginForm(user);
+        app.getHelperUser().submitLogin();
+        Assert.assertEquals(app.getHelperUser().getMessage(),"\"Login or Password incorrect\"");
 
     }
 
     @Test
-    public void loginWrongEmail() {
-        User user = new User().setEmail("margagmail.com").setPassword("Mmar123456$");
-
+    public void loginEmptyEmail(){
+        User user = new User().setEmail("").setPassword("Mmar123456$");
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submitLogin();
-        //Assert.assertEquals(app.getHelperUser().getMessage(),"Logged in success");
-
+        Assert.assertEquals(app.getHelperUser().getErrorText(), "Email is required");
+        Assert.assertTrue(app.getHelperUser().isYallaButtonNotActive());
     }
+
+    @Test
+    public void loginEmptyPassword(){
+        User user = new User().setEmail("marga@gmail.com").setPassword("");
+        app.getHelperUser().openLoginForm();
+        app.getHelperUser().fillLoginForm(user);
+        app.getHelperUser().submitLogin();
+        Assert.assertEquals(app.getHelperUser().getErrorText(), "Password is required");
+        Assert.assertTrue(app.getHelperUser().isYallaButtonNotActive());
+    }
+
+
 
     @AfterMethod
     public void postCondition(){
-        app.getHelperUser().clickOKButton();
+        app.getHelperUser().clickOkButton();
     }
 
 }
