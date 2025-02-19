@@ -74,12 +74,15 @@ public class HelperUser extends HelperBase {
     }
 
     public void checkPolicy() {
-      //  click(By.id("terms-of-use"));
-        //click(By.cssSelector("label[for='terms-of-use']"));
 
-        //variant 2
+        if (!wd.findElement(By.id("terms-of-use")).isSelected()) {
+            //  click(By.id("terms-of-use"));
+            //click(By.cssSelector("label[for='terms-of-use']"));
 
-        JavascriptExecutor js = (JavascriptExecutor) wd;
-        js.executeScript("document.querySelector('#terms-of-use').click();");
+            //variant 2
+
+            JavascriptExecutor js = (JavascriptExecutor) wd;
+            js.executeScript("document.querySelector('#terms-of-use').click();");
+        }
     }
 }
