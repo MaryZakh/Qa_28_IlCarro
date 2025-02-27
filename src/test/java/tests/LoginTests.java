@@ -17,6 +17,8 @@ public class LoginTests extends TestBase {
 
     @Test
     public void loginSuccess() {
+        logger.info("Test start with test data --->" + " email : 'marga@gmail.com' & password : 'Mmar123456$'");
+
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("marga@gmail.com", "Mmar123456$");
         app.getHelperUser().submit();
@@ -28,6 +30,7 @@ public class LoginTests extends TestBase {
     @Test
     public void loginSuccess1() {
         User user = new User().setEmail("marga@gmail.com").setPassword("Mmar123456$");
+        logger.info("Test start with test data --->" + " email : 'marga@gmail.com' & password : 'Mmar123456$'");
 
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm(user);
@@ -38,6 +41,8 @@ public class LoginTests extends TestBase {
 
     @Test
     public void loginSuccessModel() {
+        logger.info("Test start with test data --->" + " email : 'margo@gmail.com' & password : 'Mmar123456$'");
+
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("margo@gmail.com", "Mmar123456$");
         app.getHelperUser().submit();
@@ -49,6 +54,8 @@ public class LoginTests extends TestBase {
     @Test
     public void loginWrongEmail(){
         User user = new User().setEmail("margagmail.com").setPassword("Mmar123456$");
+        logger.info("Test start with test data --->" + " email : 'margagmail.com' & password : 'Mmar123456$'");
+
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
@@ -59,6 +66,8 @@ public class LoginTests extends TestBase {
     @Test
     public void loginWrongPassword(){
         User user = new User().setEmail("marga@gmail.com").setPassword("Mmar123");
+        logger.info("Test start with test data --->" + " email : 'marga@gmail.com' & password : 'Mmar123'");
+
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
@@ -68,6 +77,8 @@ public class LoginTests extends TestBase {
     @Test
     public void loginUnregisteredUser(){
         User user = new User().setEmail("maaa@gmail.com").setPassword("Maa123456$");
+        logger.info("Test start with test data --->" + " email : 'maaa@gmail.com' & password : 'Maa123456$'");
+
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
@@ -78,6 +89,8 @@ public class LoginTests extends TestBase {
     @Test
     public void loginEmptyEmail(){
         User user = new User().setEmail("").setPassword("Mmar123456$");
+        logger.info("Test start with test data --->" + " email : ' ' & password : 'Mmar123456$'");
+
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
@@ -88,6 +101,8 @@ public class LoginTests extends TestBase {
     @Test
     public void loginEmptyPassword(){
         User user = new User().setEmail("marga@gmail.com").setPassword("");
+        logger.info("Test start with test data --->" + " email : 'marga@gmail.com' & password : ''");
+
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();

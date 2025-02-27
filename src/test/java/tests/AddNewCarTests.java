@@ -13,6 +13,7 @@ public class AddNewCarTests extends TestBase{
 public void preCondition(){
     if (!app.getHelperUser().isLogged()){
         app.getHelperUser().login(new User().setEmail("margo@gmail.com").setPassword("Mmar123456$"));
+        logger.info("Logout complete");
     }
 }
 
@@ -34,7 +35,7 @@ public void preCondition(){
                 .price(50)
                 .about("My car")
                 .build();
-
+        logger.info("Test start with test data --->" + car.toString());
         app.getHelperCar().openCarForm();
         app.getHelperCar().fillCarForm(car);
         app.getHelperCar().attachPhoto("D:\\Qa28\\Qa_28_IlCarro\\foto-bugatti-veyron_10-650x433.jpg");
@@ -61,7 +62,7 @@ public void preCondition(){
                 .carRegNum("555-970-"+i)
                 .price(50)
                 .build();
-
+        logger.info("Test start with test data --->" + car.toString());
         app.getHelperCar().openCarForm();
         app.getHelperCar().fillCarForm(car);
         app.getHelperCar().submit();
