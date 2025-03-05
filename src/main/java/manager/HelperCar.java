@@ -56,7 +56,10 @@ public class HelperCar extends HelperBase {
     }
 
     public void searchCurrentMonth(String city, String dateFrom, String dateTo) {
+
+
         typeCity(city);
+        clearTextBox(By.id("dates"));
         click(By.id("dates"));
         //"3/10/2025", "3/27/2025" 10  27
 
@@ -69,6 +72,7 @@ public class HelperCar extends HelperBase {
     }
 
     private void typeCity(String city) {
+        clearTextBox(By.id("city"));
         type(By.id("city"), city);
         click(By.cssSelector("div.pac-item"));
     }
@@ -79,6 +83,7 @@ public class HelperCar extends HelperBase {
 
     public void searchCurrentYear(String city, String dateFrom, String dateTo) {
         typeCity(city);
+        clearTextBox(By.id("dates"));
         click(By.id("dates"));
 
         //"4/27/2025", "6/28/2025"
@@ -120,6 +125,7 @@ public class HelperCar extends HelperBase {
 
     public void searchAnyPeriod(String city, String dateFrom, String dateTo) {
         typeCity(city);
+        clearTextBox(By.id("dates"));
         click(By.id("dates"));
 
         LocalDate now = LocalDate.now();
