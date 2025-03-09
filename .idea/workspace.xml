@@ -88,12 +88,14 @@
     "Gradle.LoginTests.loginWrongPassword.executor": "Run",
     "Gradle.LoginTests.test.executor": "Run",
     "Gradle.RegistrationTests.registrationSuccess.executor": "Run",
+    "Gradle.SearchCarTests.executor": "Run",
+    "Gradle.SearchCarTests.searchAnyPeriodSuccess.executor": "Run",
     "Gradle.SearchCarTests.searchCurrentMonthSuccess.executor": "Run",
     "Gradle.SearchCarTests.searchCurrentYearSuccess.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/marii/Downloads/Qa28_ILcarro",
+    "last_opened_file_path": "C:/Users/marii/Downloads/QA_28_IL_Carro_AP",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -102,8 +104,8 @@
       <recent name="D:\Qa28\Qa_28_IlCarro" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SearchCarTests.searchCurrentYearSuccess">
-    <configuration name="AddNewCarTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SearchCarTests">
+    <configuration name="LoginTests.loginEmptyEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -116,7 +118,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.AddNewCarTests&quot;" />
+            <option value="&quot;tests.LoginTests.loginEmptyEmail&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -127,7 +129,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AddNewCarTests.addNewCarSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SearchCarTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -140,7 +142,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.AddNewCarTests.addNewCarSuccess&quot;" />
+            <option value="&quot;tests.SearchCarTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -151,7 +153,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests.registrationSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SearchCarTests.searchAnyPeriodSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -164,7 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.RegistrationTests.registrationSuccess&quot;" />
+            <option value="&quot;tests.SearchCarTests.searchAnyPeriodSuccess&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -225,11 +227,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SearchCarTests.searchCurrentYearSuccess" />
+        <item itemvalue="Gradle.SearchCarTests" />
         <item itemvalue="Gradle.SearchCarTests.searchCurrentMonthSuccess" />
-        <item itemvalue="Gradle.AddNewCarTests" />
-        <item itemvalue="Gradle.AddNewCarTests.addNewCarSuccess" />
-        <item itemvalue="Gradle.RegistrationTests.registrationSuccess" />
+        <item itemvalue="Gradle.SearchCarTests.searchAnyPeriodSuccess" />
+        <item itemvalue="Gradle.SearchCarTests.searchCurrentYearSuccess" />
+        <item itemvalue="Gradle.LoginTests.loginEmptyEmail" />
       </list>
     </recent_temporary>
   </component>
